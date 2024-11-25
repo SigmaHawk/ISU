@@ -1,7 +1,7 @@
 import random
 import math
 
-# Area calculations
+
 def circle_area():
     try:
         r = float(input("What's the radius? "))
@@ -37,7 +37,6 @@ def triangle_area():
     except:
         print("Please enter valid numbers!")
 
-# Volume calculations
 def sphere_volume():
     try:
         r = float(input("Radius of sphere? "))
@@ -101,7 +100,6 @@ def cylinder_volume():
     except:
         print("Please enter valid numbers!")
 
-# Surface Area calculations
 def sphere_surface():
     try:
         r = float(input("Radius of sphere? "))
@@ -147,7 +145,7 @@ def triangular_prism_surface():
             print("All measurements must be positive!")
             return
         triangle_area = (b * h) / 2
-        rectangle_area = l * (b + h + (b**2 + h**2)**0.5)  # length * perimeter of triangle
+        rectangle_area = l * (b + h + (b**2 + h**2)**0.5)
         surface = 2 * triangle_area + rectangle_area
         print(f"Triangular prism surface area = {surface:.2f}")
     except:
