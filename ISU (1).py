@@ -164,6 +164,18 @@ def cylinder_surface():
     except:
         print("Please enter valid numbers!")
 
+def pythagorean_theorem():
+    try:
+        a = float(input("Length of side a? "))
+        b = float(input("Length of side b? "))
+        if a <= 0 or b <= 0:
+            print("Side lengths must be positive!")
+            return
+        c = math.sqrt(a**2 + b**2)
+        print(f"The hypotenuse (c) is {c:.2f}")
+    except:
+        print("Please enter valid numbers!")
+
 def area_calculator():
     while True:
         print("\n=== Area Calculator ===")
@@ -255,15 +267,7 @@ def take_quiz():
         {
             "question": "What's the area of a triangle with base 6 and height 4?",
             "answer": 12
-        },
-        {   
-            "question": "What's the volume of a sphere rounded to 1 decimal place with a radius of 2?",
-            "answer": 33.5
-        },
-        {
-            "question": "What's the surface area of a rectangular prism with length 3, width 2, and height 1?",
-            "answer": 22
-        },
+        }
     ]
     
     for q in questions:
@@ -294,9 +298,10 @@ def main():
         print("2) Calculate Volume(3D)")
         print("3) Calculate Surface Area(3D)")
         print("4) Take a Quiz")
-        print("5) Quit")
+        print("5) Pythagorean Theorem")
+        print("6) Quit")
         
-        choice = input("\nWhat would you like to do? (1-5): ")
+        choice = input("\nWhat would you like to do? (1-6): ")
         
         if choice == "1":
             area_calculator()
@@ -307,6 +312,8 @@ def main():
         elif choice == "4":
             take_quiz()
         elif choice == "5":
+            pythagorean_theorem()
+        elif choice == "6":
             print("Thanks for using my calculator! Bye!")
             break
         else:
