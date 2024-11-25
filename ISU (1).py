@@ -1,7 +1,6 @@
 import random
 import math
 
-
 def circle_area():
     try:
         r = float(input("What's the radius? "))
@@ -256,7 +255,15 @@ def take_quiz():
         {
             "question": "What's the area of a triangle with base 6 and height 4?",
             "answer": 12
-        }
+        },
+        {   
+            "question": "What's the volume of a sphere rounded to 1 decimal place with a radius of 2?",
+            "answer": 33.5
+        },
+        {
+            "question": "What's the surface area of a rectangular prism with length 3, width 2, and height 1?",
+            "answer": 22
+        },
     ]
     
     for q in questions:
