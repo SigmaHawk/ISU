@@ -6,12 +6,12 @@ def circle_area():
     try:
         r = float(input("What's the radius? "))
         if r <= 0:
-            print("Hey, radius needs to be positive!")
+            print("Sorry, the radius needs to be positive!")
             return
         area = math.pi * r * r
         print(f"The circle's area is {area:.2f}")
     except:
-        print("Oops! Please enter a valid number")
+        print("Please enter a valid number")
 
 def rectangle_area():
     try:
@@ -23,7 +23,7 @@ def rectangle_area():
         area = w * h
         print(f"The rectangle's area is {area}")
     except:
-        print("Something went wrong - make sure to enter valid numbers!")
+        print("Something went wrong - please make sure to enter valid numbers!")
 
 def triangle_area():
     try:
